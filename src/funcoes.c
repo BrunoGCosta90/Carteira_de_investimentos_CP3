@@ -228,13 +228,9 @@ void simulador(Ativo ativos[], int totalAtivos, double poupanca, double tesouro,
 	printf("Tesouro Selic  (%.2lf%%/mes): R$ %.2lf (+R$ %.2lf)\n", tesouro * 100, tesouroAplicado, tesouroAplicado - valorTotal);
 	printf("CDB 100%% CDI   (%.2lf%%/mes): R$ %.2lf (+R$ %.2lf)\n", cdb * 100, cdbAplicado, cdbAplicado - valorTotal);
 	
-	printf("\n- Poupanca: e a que menos rende, porem e a mais conhecida e muitos aplicam nela por desconhecer\n"); 
-	printf("outras opcoes melhores. O rendimento e a cada 30 dias, nao havendo rendimento algum se retirado antes.\n");
-	printf("- Tesouro Selic: e um titulo de renda fixa pos-fixado emitiddo pelo governo federal, seu rendimento\n"); 
-	printf("acompanha a taxa de jerus Selic, sempre rende mais que a poupanca.\n");
-	printf("- CDB 100%% CDI: e um investimento de renda fixa onde quem investe estah emprestando dinheiro ao banco,\n"); 
-	printf("o rendimento e diario, muitos CDBs permitem saque a qualquer momento, uma vantagem em relacaoo a poupanca.\n"); 
-	printf("Ha um baixissimo risco, mas que e coberto pelo FGC ate R$ 250 mil por CPF.\n\n");
+	printf("\n- Poupanca: e a que menos rende, porem e a mais conhecida e muitos aplicam nela por desconhecer outras opcoes melhores. O rendimento e a cada 30 dias, nao havendo rendimento algum se retirado antes.\n");
+	printf("- Tesouro Selic: e um titulo de renda fixa pos-fixado emitiddo pelo governo federal, seu rendimento acompanha a taxa de juros Selic, sempre rende mais que a poupanca.\n");
+	printf("- CDB 100%% CDI: e um investimento de renda fixa onde quem investe estah emprestando dinheiro ao banco, o rendimento e diario, muitos CDBs permitem saque a qualquer momento, uma vantagem em relacaoo a poupanca.Ha um baixissimo risco, mas que e coberto pelo FGC ate R$ 250 mil por CPF.\n\n");
 }
 
 void relatorioFinal(Ativo ativos[], int totalAtivos){
@@ -253,5 +249,7 @@ void relatorioFinal(Ativo ativos[], int totalAtivos){
 	printf("Valor total: R$ %.2lf\n", total(ativos, totalAtivos));
 	rentabilidadeGeral(ativos, totalAtivos);
 	lucro(ativos, totalAtivos);
+	printf("Nosso simulador se conecta com o ODS 8, meta 8.10, que fala sobre ampliar o acesso das pessoas a serviços financeiros. Muita gente fica longe do mercado de investimentos por falta de informação ou medo de perder dinheiro, e o programa oferece um lugar seguro pra treinar. A pessoa cadastra os ativos e vê no relatório final a rentabilidade de cada um, o valor total e o lucro, entendendo na prática como a carteira funciona, sem arriscar dinheiro real. Como é simples e não exige conta em corretora, também pode ser usado em escolas e projetos de educação financeira.");
 	printf("\n");
+	
 }
