@@ -39,7 +39,7 @@ gcc -Wall -Wextra -Iinclude src/main.c src/funcoes.c src/modulo.c -o programa
 * **Linguagem C**
 * **GCC**
 
---
+---
 
 ## Membros do grupo envolvidos no desenvolvimento do projeto
 
