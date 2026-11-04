@@ -9,7 +9,7 @@ int carregarCarteira(Ativo ativo[], int tamanho) {
     }
 
     int i = 0;
-    while (i < tamanho && fscanf(arquivo, " %49[^;];%29[^;];%d;%lf;%lf", 
+    while (i < tamanho && fscanf(arquivo, " %49[^;];%49[^;];%d;%lf;%lf", 
              ativo[i].nome, 
              ativo[i].categoria, 
              &ativo[i].quantidade, 
