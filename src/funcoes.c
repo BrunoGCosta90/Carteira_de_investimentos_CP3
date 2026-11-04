@@ -26,7 +26,7 @@ int capturaOpcao(){
 	int opcao;
 	scanf("%d", &opcao);
 	while (opcao < 0 || opcao > 7){
-		printf("Escolha uma opção entre 0 e 7: ");
+		printf("Escolha uma opÃ§Ã£o entre 0 e 7: ");
 		scanf("%d", &opcao);
 	}
 	limpaBuffer();
@@ -70,7 +70,6 @@ void listarAtivos(Ativo ativos[], int totalAtivos){
 		printf("Quantidade possuida: %d\n", ativos[i].quantidade);
 		printf("Preco de compra: R$ %.2lf\n", ativos[i].precoCompra);
 		printf("Preco atual: R$ %.2lf\n", ativos[i].precoAtual);
-		//double total = totalIndividual(ativos, i);
 		printf("Valor total atual: R$ %.2lf\n", totalIndividual(ativos, i));
 		printf("Rentabilidade: %.2lf%%\n\n", rentabilidadeIndividual(ativos, i));
 		
@@ -249,7 +248,7 @@ void relatorioFinal(Ativo ativos[], int totalAtivos){
 	printf("Valor total: R$ %.2lf\n", total(ativos, totalAtivos));
 	rentabilidadeGeral(ativos, totalAtivos);
 	lucro(ativos, totalAtivos);
-	printf("Nosso simulador se conecta com o ODS 8, meta 8.10, que fala sobre ampliar o acesso das pessoas a serviços financeiros. Muita gente fica longe do mercado de investimentos por falta de informação ou medo de perder dinheiro, e o programa oferece um lugar seguro pra treinar. A pessoa cadastra os ativos e vê no relatório final a rentabilidade de cada um, o valor total e o lucro, entendendo na prática como a carteira funciona, sem arriscar dinheiro real. Como é simples e não exige conta em corretora, também pode ser usado em escolas e projetos de educação financeira.");
+	printf("Nosso simulador se conecta com o ODS 8, meta 8.10, que fala sobre ampliar o acesso das pessoas a serviÃ§os financeiros. Muita gente fica longe do mercado de investimentos por falta de informaÃ§Ã£o ou medo de perder dinheiro, e o programa oferece um lugar seguro pra treinar. A pessoa cadastra os ativos e vÃª no relatÃ³rio final a rentabilidade de cada um, o valor total e o lucro, entendendo na prÃ¡tica como a carteira funciona, sem arriscar dinheiro real. Como Ã© simples e nÃ£o exige conta em corretora, tambÃ©m pode ser usado em escolas e projetos de educaÃ§Ã£o financeira.");
 	printf("\n");
 	
 }
