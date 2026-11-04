@@ -30,7 +30,7 @@ Qualquer pessoa que não tenha conhecimentos básico sobre como funciona uma car
 ## Tecnologias usadas
 
 * **Linguagem C**
-* **GCC**
+* **TDM-GCC 4.9.2**
 * **IDE Dev-C++ 5.11**
 ---
 
