@@ -13,7 +13,7 @@ Seu propósito é a educação acerca da inclusão financeira, de acordo com a O
 
 ## Público-alvo
 
-Qualquer pessoa que não tenha conhecimentos básico sobre como funciona uma carteira de investimentos.
+Qualquer pessoa que não tenha conhecimentos básico sobre como funciona uma carteira de investimentos e tenha curiosidade sobre.
 
 ## Funcionalidades
 
